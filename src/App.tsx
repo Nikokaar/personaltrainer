@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <nav>
+    <nav position = 'relative'>
       <Link to={"/CustomerList"}>Customers</Link> 
       <Link to={"/TrainingList"}>Trainings</Link>     
       </nav>
