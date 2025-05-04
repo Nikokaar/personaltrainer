@@ -8,7 +8,8 @@ import TrainingList from './TrainingList'
 import './index.css'
 
 // import 'ag-grid-community/styles/ag-grid.css';
-// import 'ag-grid-community/styles/ag-theme-material.css';
+// import 'ag-grid-community/styles/ag-theme-alpine.css';
+
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -18,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<App />}>
           <Route path="CustomerList" element={<CustomerList />} />
           <Route path="TrainingList" element={<TrainingList />} />
-          {/* Optionaalinen etusivu */}
+          
           <Route index element={<CustomerList />} />
         </Route>
       </Routes>

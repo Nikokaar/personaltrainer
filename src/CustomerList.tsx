@@ -41,7 +41,8 @@ function CustomerList() {
     useEffect(fetchCustomers, []);
 
     return(
-        <div style={{ width: 1450, height: 750 }}>
+        <div style={{ width: 1400, height: 750 }}>
+        
             <AgGridReact
             rowData={customers}
             columnDefs={columnDefs}

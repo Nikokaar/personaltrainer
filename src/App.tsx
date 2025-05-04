@@ -1,17 +1,26 @@
 import './App.css'
 import { Link, Outlet } from 'react-router-dom';
-import CustomerList from './CustomerList'
-import TrainingList from './TrainingList'
+import { AppBar, Container, Toolbar, Typography } from '@mui/material';
 
 function App() {
  
 
   return (
     <>
-    <nav position = 'relative'>
+        
+      <AppBar position = 'relative'>
+        <Toolbar>
+          <Typography variant="h6">Personal Trainer</Typography>
+        </Toolbar>
+      </AppBar>
+      <Container>
+      <nav style={{ margin: '1rem 0' }}>
       <Link to={"/CustomerList"}>Customers</Link> 
       <Link to={"/TrainingList"}>Trainings</Link>     
       </nav>
+      
+    </Container>
+    
 
       <Outlet />
     </>
